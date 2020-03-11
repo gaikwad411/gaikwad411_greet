@@ -2,10 +2,7 @@
 Gaikwad411 Greet
 
 """
-
-
-def greet():
-    return 'Hello World!'
+from .utils import greet
 
 
 def main():  # type: () -> None

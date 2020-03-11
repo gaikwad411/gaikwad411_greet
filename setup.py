@@ -16,7 +16,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 # This call to setup() does all the work
 setup(
     name="gaikwad411_greet",
-    version="1.2.0",
+    version="1.3.0",
     description="Greets the world in old stupid way",
     long_description=README,
     long_description_content_type="text/markdown",

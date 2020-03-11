@@ -45,15 +45,18 @@ steps:
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 
 - script: |
+    pip install wheel
     python setup.py sdist bdist_wheel
   condition: succeeded()
   displayName: 'Artifact creation'
 
 - task: CopyFiles@2
+  condition: succeeded()
   inputs:
     targetFolder: $(Build.ArtifactStagingDirectory)
 
 - task: PublishBuildArtifacts@1
+  condition: succeeded()
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'dist'

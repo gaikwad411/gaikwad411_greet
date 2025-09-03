@@ -10,6 +10,7 @@ python -m gaikwad411_greet
 ```twine upload --skip-existing dist/*```
 
 **Deprecated: No longer maintained.**
+**Example repo : DO NOT USE**
 
 
 
